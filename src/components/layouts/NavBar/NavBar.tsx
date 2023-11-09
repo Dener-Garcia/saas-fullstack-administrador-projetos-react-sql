@@ -6,15 +6,18 @@ import Container from '../Container/Container'
 
 const NavBar = () => {
     return(
-        <nav>
+        <nav className='nav-bar'>
         <Container >
             <Link to="/">
                 <img src={logo} alt='logotipo' />
             </Link>
-            <Link to="/">Home</Link>
-            <Link to="/company">Company</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/newproject">New Project</Link>
+            <ul>
+            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/projects">Projetos</Link></li>
+            <li><Link to="/company">Empresa</Link></li>
+            <li><Link to="/contact">Contato</Link></li>
+            </ul>
+            
         </Container>
       </nav>
     )

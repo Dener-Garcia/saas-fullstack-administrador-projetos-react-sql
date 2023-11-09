@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .social .social-icons{
+    display: flex;
+    font-size: 32px;
+    gap: 44px;
+    transition: 0.2s;
+}
+
+footer .social .social-icons a:hover{
+    color: var(--color-accent);
+}
