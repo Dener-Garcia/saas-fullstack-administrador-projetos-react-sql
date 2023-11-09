@@ -76,3 +76,12 @@ Para criar os links, fazendo uma referencia a tag "<a>" do html usamos o <link>
     <Link to="/">Pagina home</Link>
     <Link to="/caminhoDesejado">Nome da pagina</Link>
 ```
+
+<a id="type"></a>
+
+## Tipando com typescript
+
+Tipando um componente que usa props
+    Devemos fornecer uma interface e declarar as props e quais tipos elas são.
+
+    

@@ -9,4 +9,14 @@
 
 .min-height{
     min-height: 75%;
+    background-color: red;
+}
+
+.start{
+    justify-content: start;
+}
+
+.colunm{
+    flex-direction: column;
+    justify-content: start;
 }
