@@ -1,0 +1,14 @@
+.new_projects{
+    width: 450px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.new_projects h1{
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.new_projects p{
+    color: var(--color-text);
+}

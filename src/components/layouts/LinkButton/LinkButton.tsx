@@ -3,12 +3,15 @@ import './module.css'
 
 interface linkProps {
     path: string;
-    linkTitle: ReactNode;
+    linkTitle: string;
   }
 
 const LinkButton = (props: linkProps) =>{
+
+    const { path, linkTitle} = props
+
     return(
-        <Link to={path}>{linkTitle}</Link>
+        <Link className='btn' to={path}>{linkTitle}</Link>
     )
 }
 export default LinkButton
