@@ -3,6 +3,8 @@ import ButtonForm from '../../Form-components/button/ButtonForm'
 import Input from '../../Form-components/input/Input'
 import Select from '../../Form-components/select/Select'
 import styles from './projectForm.module.css'
+import getCategories from "../../../api/getCategories.ts"
+
 
 interface BtnProps{
     btnType: 'button' | 'submit' | 'reset';
@@ -13,20 +15,15 @@ const ProjectForm: React.FC<BtnProps> = ({btnType}) => {
 const [categories, setCategories] = useState([])
 
 useEffect(() => {
-    fetch("http:192.168.1.44:5000/categories", {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    })
-        .then((res) => res.json())
-        .then((data) => {
-            setCategories(data)
-            console.log(data)
-        })
-        .catch((error) => console.log(error))
-},[])
+    getCategories()
+    .then((res) => {
+        setCategories(res);
 
+      })
+        .catch((err) =>{
+          console.error('erro ao receber dados', err);
+        });
+},[])
 
 
     return(

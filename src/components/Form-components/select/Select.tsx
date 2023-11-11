@@ -3,7 +3,7 @@ import styles from './select.module.css'
 interface SelectProps{
     text: string
     name: string
-    options?: string
+    options?: any
     value?: string
     handleOnChange?: Event
 }
