@@ -84,4 +84,12 @@ Para criar os links, fazendo uma referencia a tag "<a>" do html usamos o <link>
 Tipando um componente que usa props
     Devemos fornecer uma interface e declarar as props e quais tipos elas são.
 
-    
+<a id="dbFake"></a>
+
+## Usando extensão db.json
+
+Essa extensão serve para simular um backend com banco de dados no nosso sistema localmente
+
+- Crie um arquivo na raiz chamado db.json
+- Crie um script no package.json para rodar o nosso back-end local
+    - "backend": "json-server --watch db.json --port 5000",
