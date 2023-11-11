@@ -1,0 +1,12 @@
+    .my_btn{
+        background: var(--color-accent);
+        color: var(--color-text);
+        padding: 0.5rem 1rem;
+        border-radius: 10rem;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover{
+            background: var(--color-accent-hover);
+        }
+    }

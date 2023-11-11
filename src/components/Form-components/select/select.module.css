@@ -1,0 +1,17 @@
+.select_my{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.select_my label{
+    font-size: 18px;
+    color: var(--color-text);
+}
+
+.select_my select {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
