@@ -1,7 +1,7 @@
-const getCategories = async () => {
+const getCategories = async (typeReq: string) => {
 
   const data = await fetch("http://localhost:5000/categories", {
-    method: 'GET',
+    method: typeReq,
     headers: {
         'Content-Type': 'application/json',
     },

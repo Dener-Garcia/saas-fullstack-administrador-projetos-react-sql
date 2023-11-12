@@ -4,6 +4,7 @@
 - [Limpando o Projeto](#cleaning)
 - [Estruturando pastas](#folders)
 - [Usando react router 6.0](#routes)
+- [Hooks do projeto](#routes)
 
 - [Trabalhando com Hooks](#hooks)
 - [Passando propriedas com props](#props)
@@ -93,3 +94,12 @@ Essa extensão serve para simular um backend com banco de dados no nosso sistema
 - Crie um arquivo na raiz chamado db.json
 - Crie um script no package.json para rodar o nosso back-end local
     - "backend": "json-server --watch db.json --port 5000",
+- Abra seu navegador e digite localhost:5000 e veja se o JSON server esta rodando
+
+<a id="hooks"></a>
+
+## Hooks
+
+### useHistory
+
+O useHistory permite fazer redirect nas paginas do sistema, exemplo quando ele quiser fazer um post vamos redirecionar ele para outra pagina.

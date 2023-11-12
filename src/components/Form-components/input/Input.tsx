@@ -9,6 +9,7 @@ interface InputProps{
     value?: string,
     handleOnChange?: ChangeEvent<HTMLInputElement>;
 }
+console.log("renderizou input")
 
 const Input = (props:InputProps) => {
 
